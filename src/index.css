@@ -329,3 +329,22 @@ main {
   line-height: 1.5;
   color: var(--grey-600);
 }
+.btn-container {
+  margin-bottom: 1rem;
+}
+
+.prev-btn,
+.next-btn {
+  color: var(--primary-700);
+  font-size: 1.25rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  color: var(--primary-500);
+}
