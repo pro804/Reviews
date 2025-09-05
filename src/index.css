@@ -256,10 +256,11 @@ ul {
 /* ============= PROJECT CSS =============== */
 
 main {
-  min-height: 100vw;
+  min-height: 100vh;
   display: grid;
   place-items: center;
 }
+
 .review {
   width: 90vw;
   max-width: var(--fixed-width);
@@ -272,13 +273,14 @@ main {
 .review:hover {
   box-shadow: var(--shadow-3);
 }
+
 .img-container {
+  position: relative;
   width: 150px;
   height: 150px;
   border-radius: 50%;
   margin: 0 auto;
   margin-bottom: 1.5rem;
-  position: relative;
 }
 
 .person-img {
@@ -289,6 +291,7 @@ main {
   border-radius: 50%;
   position: relative;
 }
+
 .quote-icon {
   position: absolute;
   top: 0;
@@ -297,9 +300,10 @@ main {
   height: 2.5rem;
   display: grid;
   place-items: center;
-  background-color: var(--primary-500);
   border-radius: 50%;
   transform: translateY(25%);
+  background-color: var(--primary-500);
+  color: var(--white);
 }
 
 .img-container::before {
@@ -310,20 +314,20 @@ main {
   position: absolute;
   border-radius: 50%;
   top: -0.25rem;
-  right: -0.25rem;
+  right: -0.5rem;
 }
-
 .author {
-  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
-
 .job {
   text-transform: uppercase;
   color: var(--primary-500);
+  font-size: 0.85rem;
   font-weight: 500;
   margin-bottom: 0.75rem;
   letter-spacing: var(--letterSpacing);
 }
+
 .info {
   margin-bottom: 0.75rem;
   line-height: 1.5;
@@ -332,7 +336,6 @@ main {
 .btn-container {
   margin-bottom: 1rem;
 }
-
 .prev-btn,
 .next-btn {
   color: var(--primary-700);
@@ -343,7 +346,6 @@ main {
   transition: var(--transition);
   cursor: pointer;
 }
-
 .prev-btn:hover,
 .next-btn:hover {
   color: var(--primary-500);
