@@ -5,7 +5,6 @@ const App = () => {
   const [index, setIndex] = useState(0);
   const { name, job, image, text } = people[index];
 
-  console.log(name);
   return <h2> Reviews </h2>;
 };
 
